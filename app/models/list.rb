@@ -1,4 +1,6 @@
 class List < ApplicationRecord
   belongs_to :store
-  has_many :lists :dependent => :destroy
+  has_many :items :dependent => :destroy
+
+
 end
