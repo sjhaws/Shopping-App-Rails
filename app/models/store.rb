@@ -1,6 +1,6 @@
 class Store < ApplicationRecord
-  has_many :lists, dependent: :destroy
-  has_many :address, dependent: :destroy
+  has_many :lists
+  has_many :address
 
 
   def self.store_items
